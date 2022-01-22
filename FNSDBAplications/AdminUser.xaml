@@ -1,0 +1,36 @@
+﻿<Window x:Class="FNSDBAplications.AdminUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="AdminUser" Height="586.74" Width="974.033" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <SolidColorBrush x:Key="brushWatermarkBackground" Color="White" />
+        <SolidColorBrush x:Key="brushWatermarkForeground" Color="LightSteelBlue" />
+        <SolidColorBrush x:Key="brushWatermarkBorder" Color="Indigo" />
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <Style x:Key="EntryFieldStyle" TargetType="Grid" >
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+    <Grid HorizontalAlignment="Left" Width="974" Margin="0,0,-8,0">
+        <DataGrid Name="datagridAdmin" Margin="10,10,0,349" HorizontalGridLinesBrush="DarkGray" HorizontalAlignment="Left" Width="942"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="28" Margin="48,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Имя"/>
+        <TextBox x:Name="MiddleName" HorizontalAlignment="Left" Height="28" Margin="48,297,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Фамилия"/>
+        <TextBox x:Name="LastName" HorizontalAlignment="Left" Height="28" Margin="48,325,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Отчество"/>
+        <CheckBox x:Name="IsEnabled"  Content="Включен" HorizontalAlignment="Left" Margin="48,223,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
+        <CheckBox x:Name="Setting" Content="Администратор" HorizontalAlignment="Left" Margin="48,243,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
+        <DatePicker x:Name="CreateDate" HorizontalAlignment="Left" Margin="48,353,0,0" VerticalAlignment="Top" Width="232" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Введите дату"/>
+        <TextBox x:Name="Login" HorizontalAlignment="Left" Height="28" Margin="48,382,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Логин"/>
+        <TextBox x:Name="Password" HorizontalAlignment="Left" Height="28" Margin="48,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Пароль"/>
+        <TextBox x:Name="Position" HorizontalAlignment="Left" Height="26" Margin="48,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Должность"/>
+        <Button x:Name="Insert" Content="Добавить" HorizontalAlignment="Left" Margin="48,478,0,0" VerticalAlignment="Top" Width="123" Height="30" FontSize="20" FontFamily="Times New Roman" Click="Insert_Click" Background="#FF4EF02A" FontWeight="Bold"/>
+        <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Left" Margin="176,478,0,0" VerticalAlignment="Top" Width="120" FontSize="20" FontFamily="Times New Roman" Height="30" Click="Delete_Click" Background="#FFEC4141" Foreground="#FFEEEE1D" FontWeight="Bold"/>
+        <Button x:Name ="Back" Content="Назад" HorizontalAlignment="Left" Margin="723,478,0,0" VerticalAlignment="Top" Width="106" Height="30" Background="#FFCDCD20" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Click="Back_Click"/>
+        <Button x:Name ="Update" Content="Редактировать" HorizontalAlignment="Left" Margin="409,221,0,0" VerticalAlignment="Top" Width="172" Height="30" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Background="#FF1124EC" Foreground="#FFEAFD2E" Click="Update_Click"/>
+        <Button x:Name="Closed" Content="Выход" HorizontalAlignment="Left" Margin="847,478,0,0" VerticalAlignment="Top" Width="105" Height="30" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Background="#FF9B0808" Foreground="#FFE6F1F1" Click="Closed_Click"/>
+    </Grid>
+</Window>

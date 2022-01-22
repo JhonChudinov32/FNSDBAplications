@@ -1,0 +1,25 @@
+﻿<Window x:Class="FNSDBAplications.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Выгрузка данных"  Height="446" Width="431" FontSize="16" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,-2">
+        <ProgressBar Maximum="100" Minimum="0" Name="ProgBar" HorizontalAlignment="Left" Height="51" Margin="42,356,0,0" VerticalAlignment="Top" Width="343" ValueChanged="ProgressBar_ValueChanged" RenderTransformOrigin="0.879,19.353"/>
+        <Button x:Name="RCMP"  HorizontalAlignment="Left" Margin="53,52,0,0" VerticalAlignment="Top" Width="314" Click="Button_Click" Height="41" FontSize="20" Background="#FFDA1389" Foreground="#FF78DA03" FontFamily="Times New Roman" FontWeight="Bold">
+            <TextBlock Text="Загрузить архив РМСП" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Button>
+        <Button x:Name="DebetCredet" Content="Загрузить архив Доходы/Расходы" HorizontalAlignment="Left" Margin="36,178,0,0" VerticalAlignment="Top" Width="344" Height="38" Click="DebetCredet_Click" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman" Background="#FF16AE40"/>
+        <Button x:Name ="Ckr" Content="Загрузить архив СЧР"  HorizontalAlignment="Left" Margin="54,95,0,0" VerticalAlignment="Top" Width="313" Height="42" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="#FFD8822C" Foreground="#FF23399C"/>
+        <Button x:Name="Nalog" Content="Загрузить архив Налогов" HorizontalAlignment="Left" Margin="55,220,0,0" VerticalAlignment="Top" Width="312" Click="Nalog_Click" Height="37" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="#FF04A212"/>
+        <Button x:Name="Shtraf" Content="Загрузить архив Штрафов" HorizontalAlignment="Left" Margin="56,261,0,0" VerticalAlignment="Top" Width="311" Click="Shtraf_Click" Height="37" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="#FFDEE81A" Foreground="#FF259C9C"/>
+        <Button x:Name="Peni" Content="Загрузить архив Недоимок" HorizontalAlignment="Left" Margin="56,303,0,0" VerticalAlignment="Top" Width="311" Click="Peni_Click" Height="37" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="#FFDEE81A" Foreground="#FF259C9C"/>
+        <Button x:Name="Usn" Content="Загрузить архив УСН" HorizontalAlignment="Left" Margin="54,140,0,0" VerticalAlignment="Top" Width="313" Click="Usn_Click" Height="35" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Background="#FFBF7E3C" Foreground="#FF3449A8"/>
+        <Label x:Name="Percent" Content="" HorizontalAlignment="Left" Margin="184,356,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.9,0.452" FontSize="12" Width="51" Height="26" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Label x:Name="Count" Content="" HorizontalAlignment="Left" Margin="138,382,0,0" VerticalAlignment="Top" Height="25" FontSize="12" Width="142" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" FontWeight="Bold" Height="37" FontFamily="Times New Roman" Click="Back_Click" Background="#FF28DE00" FontSize="22" Margin="10,0,0,0"/>
+        <Button x:Name="Closed" Content="Выход" HorizontalAlignment="Left" Margin="289,0,0,0" VerticalAlignment="Top" Width="122" FontFamily="Times New Roman" FontWeight="Bold" Height="37" Background="#FFF3E913" FontSize="22" Click="Closed_Click"/>
+
+    </Grid>
+</Window>

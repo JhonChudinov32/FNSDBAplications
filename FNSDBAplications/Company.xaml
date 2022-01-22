@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="FNSDBAplications.Company"
+        mc:Ignorable="d"
+        Title="Company" Height="609.876" Width="800">
+    <Grid Margin="0,0,0,-99" Height="618" VerticalAlignment="Top">
+        <DataGrid x:Name="datagridComapny" HorizontalAlignment="Left" Height="331" Margin="10,38,0,0" VerticalAlignment="Top" Width="772"/>
+        <TextBox x:Name="CompanyName" HorizontalAlignment="Left" Height="28" Margin="10,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="568" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Компания"/>
+        <TextBox x:Name="inn" HorizontalAlignment="Left" Height="28" Margin="10,409,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="568" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="ИНН"/>
+        <TextBox x:Name="ogrn" HorizontalAlignment="Left" Margin="10,437,0,153" TextWrapping="Wrap" Width="568" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="ОГРН"/>
+        <TextBox x:Name="ip" HorizontalAlignment="Left" Height="28" Margin="10,465,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="568" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="ИП"/>
+        <TextBox x:Name="location" HorizontalAlignment="Left" Height="28" Margin="10,493,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="568" FontFamily="Times New Roman" FontSize="16" materialDesign:HintAssist.Hint="Адрес"/>
+        <Button x:Name="Insert" Content="Добавить" HorizontalAlignment="Left" Margin="190,537,0,0" VerticalAlignment="Top" Width="212" Height="30" FontSize="20" FontFamily="Times New Roman" Click="Insert_Click" Background="#FF4EF02A" FontWeight="Bold" RenderTransformOrigin="1.625,4.056"/>
+        <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Left" Margin="611,416,0,0" VerticalAlignment="Top" Width="171" FontSize="20" FontFamily="Times New Roman" Height="30" Click="Delete_Click" Background="#FFEC4141" Foreground="#FFEEEE1D" FontWeight="Bold"/>
+        <Button x:Name ="Back" Content="Назад" HorizontalAlignment="Left" Margin="569,3,0,0" VerticalAlignment="Top" Width="97" Height="35" Background="#FFCDCD20" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Click="Back_Click"/>
+        <Button x:Name ="Update" Content="Редактировать" HorizontalAlignment="Left" Margin="611,378,0,0" VerticalAlignment="Top" Width="171" Height="30" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Background="#FF1124EC" Foreground="#FFEAFD2E" Click="Update_Click"/>
+        <Button x:Name="Closed" Content="Выход" HorizontalAlignment="Left" Margin="686,3,0,0" VerticalAlignment="Top" Width="96" Height="35" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Background="#FF9B0808" Foreground="#FFE6F1F1" Click="Closed_Click"/>
+        <Button x:Name ="ExportExcel" Content="Экспорт данных" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Width="192" Height="35" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Background="DimGray" Foreground="#FFEAFD2E" Click="ExportExcel_Click"/>
+    </Grid>
+</Window>
