@@ -1,0 +1,20 @@
+﻿<Window x:Class="FNSDBAplications.GIRBO"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FNSDBAplications"
+        mc:Ignorable="d"
+        Title="GIRBO" Height="450" Width="540.435">
+    <Grid>
+
+        <DataGrid Name="girbogrid" HorizontalAlignment="Left" Height="277" Margin="0,47,0,0" VerticalAlignment="Top" Width="531"/>
+        <Button Name="Balance" Content="Баланс" HorizontalAlignment="Left" Margin="185,357,0,0" VerticalAlignment="Top" Width="162" Height="32" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold" Click="Balance_Click"/>
+        <Button Name="Finotchet" Content="Фин.Отчет" HorizontalAlignment="Left" Margin="360,357,0,0" VerticalAlignment="Top" Width="162" Height="32" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold" Click="Finotchet_Click"/>
+        <Button Name="LoadPDF" Content="Загрузить" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" Width="162" Height="32" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold" Click="LoadPDF_Click"/>
+        <Button Name ="Back" Content="Назад" HorizontalAlignment="Left" Margin="293,10,0,0" VerticalAlignment="Top" Width="106" Height="30" Background="#FFCDCD20" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Click="Back_Click"/>
+        <Button Name="Closed" Content="Выход" HorizontalAlignment="Left" Margin="417,10,0,0" VerticalAlignment="Top" Width="105" Height="30" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold" Background="#FF9B0808" Foreground="#FFE6F1F1" Click="Closed_Click"/>
+        <Button Name="Import" Content="Excel" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Width="162" Height="32" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold" Click="Excel_Click" Background="#FFEEE6E6" Foreground="#FF43B40E" BorderBrush="#FFBD2929"/>
+
+    </Grid>
+</Window>

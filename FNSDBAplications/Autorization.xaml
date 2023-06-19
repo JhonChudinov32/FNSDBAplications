@@ -1,0 +1,20 @@
+﻿<Window x:Class="FNSDBAplications.Autorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FNSDBAplications.Toolsuser"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="313.269" Width="400.985" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen" FontFamily="Times New Roman" FontSize="18">
+    <Grid RenderTransformOrigin="0.871,0.499" HorizontalAlignment="Left" Width="391">
+        <Button Name="entered" Content="Вход" Margin="66,197,0,0" VerticalAlignment="Top" Width="111" Height="42" Click="Entered_Click" FontSize="24" Background="#FF5CB22C" FontFamily="Times New Roman" HorizontalAlignment="Left"/>
+        <Button Name="Closed" Content="Выход" Margin="211,197,72,0" VerticalAlignment="Top" Height="42" Click="Closed_Click" FontSize="24" Background="#FFE84521" FontFamily="Times New Roman" IsDefault="True"/>
+        <TextBox Name ="Login" Text="{Binding Path=SaveLoginID}" HorizontalAlignment="Left" Height="36" Margin="64,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontWeight="Bold" FontSize="18" BorderBrush="#FF3C5FC9"/>
+        <PasswordBox Name="Password"  HorizontalAlignment="Left" Height="35" Margin="65,117,0,0" VerticalAlignment="Top" Width="254" RenderTransformOrigin="0.5,0.5"   FontWeight="Bold" FontSize="18" Background="White" Foreground="#FFFF3636" BorderBrush="#FF2857E4" PasswordChar="*" 
+        local:PasswortBoxHelper.Attach="True" local:PasswortBoxHelper.Password="{Binding Path=SaveLoginPSW, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        </PasswordBox>
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="65,20,0,0" VerticalAlignment="Top" Width="65" FontSize="16" Height="30" FontFamily="Times New Roman"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="66,88,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
+        <CheckBox Name="LoginIDMemory" Content="сохранить данные" HorizontalAlignment="Left" Margin="66,165,0,0" VerticalAlignment="Top" IsChecked="{Binding Path=SaveUser}"/>
+    </Grid>
+</Window>

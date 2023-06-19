@@ -1,0 +1,24 @@
+﻿<Window x:Class="FNSDBAplications.WindowMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FNSDBAplications"
+        mc:Ignorable="d"
+        Title="Меню" Height="681.858" Width="788" WindowStartupLocation="CenterScreen" Background="#FFB7A6CF">
+    <Grid Margin="0,-28,-8,-4" Height="442" VerticalAlignment="Top">
+
+        <Button Name="Admin" Content="Доступ" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="209" FontSize="24" FontFamily="Times New Roman" Click="Admin_Click" Height="71" Background="#FFA61111" Foreground="#FF2BF046" FontWeight="Bold"/>
+        <Button Name="UpdateDB" Content="Загрузка архивов открытых данных ФНС" HorizontalAlignment="Left" Margin="296,39,0,0" VerticalAlignment="Top" Width="475" FontSize="24" FontFamily="Times New Roman" Click="UpdateDB_Click" Height="71" Background="#FF13A83B" FontWeight="Bold" Cursor="None" Foreground="#FFC7F011"/>
+        <Button Name="Db" Content="Данные ФНС" HorizontalAlignment="Left" Margin="296,127,0,0" VerticalAlignment="Top" Width="212" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="Db_Click" Background="#FFDCDC45"/>
+        <Button Name="Girbo" Content="Данные ГИРБО" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top" Width="209" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="Girbo_Click" Background="#FFDCDC45"/>
+        <Button Name="ToExcelCredit" Content="Доходы" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="209" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="ToExcelCredit_Click" Background="#FFDCDC45"/>
+        <Button Name="ToExcelNalog" Content="Налоги" HorizontalAlignment="Left" Margin="296,225,0,0" VerticalAlignment="Top" Width="212" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="ToExcelNalog_Click" Background="#FFDCDC45"/>
+        <Button x:Name="ToExcelSCHR" Content="СЧР" HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" Width="209" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="ToExcelSCHR_Click" Background="#FFDCDC45"/>
+        <Button x:Name="ToExcelShtraf" Content="Штрафы" HorizontalAlignment="Left" Margin="296,317,0,0" VerticalAlignment="Top" Width="212" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="ToExcelShtraf_Click" Background="#FFDCDC45"/>
+        <Button x:Name="ToExcelPeni" Content="Пени" HorizontalAlignment="Left" Margin="296,409,0,-37" VerticalAlignment="Top" Width="212" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="ToExcelPeni_Click" Background="#FFDCDC45"/>
+        <Button x:Name="ToExcelRMSP" Content="РМСП" HorizontalAlignment="Left" Margin="10,409,0,-37" VerticalAlignment="Top" Width="209" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="ToExcelRMSP_Click" Background="#FFDCDC45"/>
+        <Button x:Name="ToExcelUSN" Content="УСН" HorizontalAlignment="Left" Margin="10,512,0,-140" VerticalAlignment="Top" Width="209" Height="70" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Click="ToExcelUSN_Click" Background="#FFDCDC45"/>
+
+    </Grid>
+</Window>
